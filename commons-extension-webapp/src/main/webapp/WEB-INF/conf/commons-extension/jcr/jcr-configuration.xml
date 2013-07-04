@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
 
     Copyright (C) 2013 eXo Platform SAS.
@@ -19,14 +19,20 @@
     02110-1301 USA, or see the FSF site: http://www.fsf.org.
 
 -->
-<configuration
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
-   xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
-  <import>war:/conf/commons-extension/cometd-configuration.xml</import>
-  <import>war:/conf/commons-extension/common-configuration.xml</import>
-  <import>war:/conf/commons-extension/jcr-ext-configuration.xml</import>
-  <import>war:/conf/commons-extension/upgrade-configuration.xml</import>
-  <import>war:/conf/commons-extension/webui-configuration.xml</import>
-  <import>war:/conf/commons-extension/jcr/jcr-configuration.xml</import>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
+               xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
+
+   <component>
+      <key>org.exoplatform.services.jcr.config.RepositoryServiceConfiguration</key>
+      <type>org.exoplatform.services.jcr.impl.config.RepositoryServiceConfigurationImpl</type>
+      <init-params>
+         <value-param>
+            <name>conf-path</name>
+            <description>JCR configuration file</description>
+            <value>war:/conf/jcr/repository-configuration.xml</value>
+         </value-param>
+      </init-params>
+   </component>
+
 </configuration>
