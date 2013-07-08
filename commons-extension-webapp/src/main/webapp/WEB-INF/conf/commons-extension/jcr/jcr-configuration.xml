@@ -30,7 +30,7 @@
          <value-param>
             <name>conf-path</name>
             <description>JCR configuration file</description>
-            <value>war:/conf/jcr/repository-configuration.xml</value>
+            <value>war:/conf/commons-extension/jcr/repository-configuration.xml</value>
          </value-param>
       </init-params>
    </component>
