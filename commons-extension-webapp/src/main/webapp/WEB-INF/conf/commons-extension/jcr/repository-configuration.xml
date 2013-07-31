@@ -64,7 +64,7 @@
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
                      <property name="jgroups-multiplexer-stack" value="false"/>
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}"/>
-                     <property name="use-distributed-cache" value="${use-distributed-cache:true}" />
+                     <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
 					</cache>
 					<query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
@@ -138,7 +138,7 @@
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config.workspace.portal-system}"/>
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
                      <property name="infinispan-cluster-name" value="jcr_portal_system${container.name.suffix}"/>
-                     <property name="use-distributed-cache" value="${use-distributed-cache:true}" />
+                     <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
 					</cache>
 					<query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
@@ -211,7 +211,7 @@
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config}"/>
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}"/>
-                     <property name="use-distributed-cache" value="${use-distributed-cache:true}" />
+                     <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
 					</cache>
 					<query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
@@ -278,7 +278,7 @@
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config}" />
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}" />
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}" />
-                     <property name="use-distributed-cache" value="${use-distributed-cache:true}" />
+                     <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
 					</cache>
 					<query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
@@ -348,7 +348,7 @@
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config}" />
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}" />
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}" />
-                     <property name="use-distributed-cache" value="${use-distributed-cache:true}" />
+                     <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
 					</cache>
 					<query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
@@ -418,7 +418,7 @@
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config}" />
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}" />
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}" />
-                     <property name="use-distributed-cache" value="${use-distributed-cache:true}" />
+                     <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
 					</cache>
 					<query-handler class="org.exoplatform.services.jcr.impl.core.query.lucene.SearchIndex">
