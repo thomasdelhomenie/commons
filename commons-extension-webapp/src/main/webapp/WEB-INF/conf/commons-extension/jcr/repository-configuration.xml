@@ -62,7 +62,6 @@
 						<properties>
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config}"/>
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-                     <property name="jgroups-multiplexer-stack" value="false"/>
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}"/>
                      <property name="use-distributed-cache" value="${use-distributed-cache:false}" />
 						</properties>
@@ -73,7 +72,6 @@
 							<property name="changesfilter-class" value="${gatein.jcr.index.changefilterclass}"/>
 							<property name="infinispan-configuration" value="${gatein.jcr.index.cache.config}"/>
 							<property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-							<property name="jgroups-multiplexer-stack" value="false"/>
 							<property name="infinispan-cluster-name" value="jcrindexer${container.name.suffix}"/>
 							<property name="max-volatile-time" value="60"/>
 						</properties>
@@ -83,7 +81,6 @@
 							<property name="time-out" value="15m"/>
 							<property name="infinispan-configuration" value="${gatein.jcr.lock.cache.config}"/>
 							<property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-							<property name="jgroups-multiplexer-stack" value="false"/>
 							<property name="infinispan-cluster-name" value="jcrlock${container.name.suffix}"/>
                             <property name="infinispan-cl-cache.jdbc.table.name" value="jcrlock"/>
                             <property name="infinispan-cl-cache.jdbc.table.create" value="true"/>
@@ -133,7 +130,6 @@
 					<cache enabled="true"
                  class="org.exoplatform.services.jcr.impl.dataflow.persistent.infinispan.ISPNCacheWorkspaceStorageCache">
 						<properties>
-							<property name="jgroups-multiplexer-stack" value="false"/>
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config.workspace.portal-system}"/>
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
                      <property name="infinispan-cluster-name" value="jcr_portal_system${container.name.suffix}"/>
@@ -146,7 +142,6 @@
 							<property name="changesfilter-class" value="${gatein.jcr.index.changefilterclass}"/>
 							<property name="infinispan-configuration" value="${gatein.jcr.index.cache.config}"/>
 							<property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-							<property name="jgroups-multiplexer-stack" value="false"/>
 							<property name="infinispan-cluster-name" value="jcrindexer${container.name.suffix}"/>
 							<property name="max-volatile-time" value="60"/>
 						</properties>
@@ -156,7 +151,6 @@
 							<property name="time-out" value="15m"/>
 							<property name="infinispan-configuration" value="${gatein.jcr.lock.cache.config}"/>
 							<property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-							<property name="jgroups-multiplexer-stack" value="false"/>
 							<property name="infinispan-cluster-name" value="jcrlock${container.name.suffix}"/>
                             <property name="infinispan-cl-cache.jdbc.table.name" value="jcrlock"/>
                             <property name="infinispan-cl-cache.jdbc.table.create" value="true"/>
@@ -205,7 +199,6 @@
 					<cache enabled="true"
                  class="org.exoplatform.services.jcr.impl.dataflow.persistent.infinispan.ISPNCacheWorkspaceStorageCache">
 						<properties>
-                     <property name="jgroups-multiplexer-stack" value="false"/>
                      <property name="infinispan-configuration" value="${gatein.jcr.cache.config}"/>
                      <property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
                      <property name="infinispan-cluster-name" value="jcr${container.name.suffix}"/>
@@ -218,7 +211,6 @@
 							<property name="changesfilter-class" value="${gatein.jcr.index.changefilterclass}"/>
 							<property name="infinispan-configuration" value="${gatein.jcr.index.cache.config}"/>
 							<property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-							<property name="jgroups-multiplexer-stack" value="false"/>
 							<property name="infinispan-cluster-name" value="jcrindexer${container.name.suffix}"/>
 							<property name="max-volatile-time" value="60"/>
 						</properties>
@@ -228,7 +220,6 @@
 							<property name="time-out" value="15m"/>
 							<property name="infinispan-configuration" value="${gatein.jcr.lock.cache.config}"/>
 							<property name="jgroups-configuration" value="${gatein.jcr.jgroups.config}"/>
-							<property name="jgroups-multiplexer-stack" value="false"/>
 							<property name="infinispan-cluster-name" value="jcrlock${container.name.suffix}"/>
                             <property name="infinispan-cl-cache.jdbc.table.name" value="jcrlock"/>
                             <property name="infinispan-cl-cache.jdbc.table.create" value="true"/>
